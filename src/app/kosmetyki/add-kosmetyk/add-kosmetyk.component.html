@@ -1,1 +1,31 @@
-<p>add-kosmetyk works!</p>
+<h1>Dodaj kosmetyk</h1>
+<form [formGroup]="kosmetykForm" (ngSubmit)="save()">
+  <div class="control-group">
+    <label class="control-label">Category</label>
+    <input type="text" formControlName="category" list="categories">
+    <datalist id="categories">
+      <div *ngFor="let category of categories">
+        <option [value]="category">
+      </div>
+    </datalist>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div class="control-group">
+    <label class="control-label">Cost</label>
+    <input type="text" formControlName="cost">
+  </div>
+  <div class="control-group">
+    <label class="control-label">Component</label>
+    <input type="text" formControlName="component" list="components">
+    <datalist id="components">
+      <div *ngFor="let component of components">
+        <option [value]="component">
+      </div>
+    </datalist>
+  </div>
+  <button type="submit" [disabled]="kosmetykForm.invalid">Zapisz</button>
+</form>
+

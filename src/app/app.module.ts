@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KosmetykiModule } from './kosmetyki/kosmetyki.module';
+import { FormsModule } from '@angular/forms';
+
+import {HttpClientModule} from '@angular/common/http';
+import { KosmetykService } from './kosmetyki/kosmetyk.service';
+import { KosmetykPropertiesService } from './kosmetyki/kosmetyk-properties.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +17,11 @@ import { KosmetykiModule } from './kosmetyki/kosmetyki.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    KosmetykiModule
+    KosmetykiModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [KosmetykService, KosmetykPropertiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
