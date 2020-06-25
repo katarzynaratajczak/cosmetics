@@ -1,3 +1,18 @@
 {
-  "kosmetyki": []
+  "kosmetyki": [
+    {
+      "id": 1,
+      "category": "Makijaż",
+      "name": "Żelowy lakier",
+      "cost": 10,
+      "component": "Minerał"
+    },
+    {
+      "id": 2,
+      "category": "Zapachy",
+      "name": "Glacier",
+      "cost": 50,
+      "component": "Warzywo"
+    }
+  ]
 }

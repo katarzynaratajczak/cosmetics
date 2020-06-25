@@ -4,7 +4,7 @@ export interface KosmetykAttrs {
   category: string;
   name: string;
   cost: number;
-  componenet: string;
+  component: string;
 }
 
 
@@ -13,14 +13,14 @@ export class Kosmetyk {
   category: string;
   name: string;
   cost: number;
-  componenet: string;
+  component: string;
 
   constructor(kosmetykAttrs: Partial<KosmetykAttrs> = {}) {
     this.id = kosmetykAttrs.id;
     this.category = kosmetykAttrs.category;
     this.name = kosmetykAttrs.name;
     this.cost = kosmetykAttrs.cost;
-    this.componenet = kosmetykAttrs.componenet;
+    this.component = kosmetykAttrs.component;
   }
 
 }

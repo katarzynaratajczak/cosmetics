@@ -1,0 +1,33 @@
+<h2>Lista kosmetyków</h2>
+<div class="menu">
+  <div>
+    <button (click)="getKosmetykiList()">Refresh</button>
+  </div>
+</div>
+<div class="menu">
+  <form>
+  <label class="control-label">Category</label>
+  <select [(ngModel)]="atrCategory" name="category">
+    <option *ngFor="let category of categories" [value]="category">
+      {{category}}
+    </option>
+  </select>
+</form>
+<button (click)="filterKosmetykiByCategory(atrCategory)">Szukaj</button>
+</div>
+
+<table>
+  <tr><b>Category</b>
+  <td *ngFor="let kosmetyki of kosmetyki">{{kosmetyki.category}}</td></tr>
+  <tr><b>Name</b>
+  <td *ngFor="let kosmetyki of kosmetyki">{{kosmetyki.name}}</td></tr>
+  <tr><b>Cost</b>
+  <td *ngFor="let kosmetyki of kosmetyki">{{kosmetyki.cost}}</td></tr>
+  <tr><b>Component</b>
+  <td *ngFor="let kosmetyki of kosmetyki">{{kosmetyki.component}}</td></tr>
+
+
+
+
+
+</table>

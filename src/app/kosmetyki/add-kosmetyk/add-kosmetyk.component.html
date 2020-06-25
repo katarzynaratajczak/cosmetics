@@ -1,4 +1,4 @@
-<h1>Dodaj kosmetyk</h1>
+<h2>{{kosmetykForm.get('id').value ? 'Edycja kosmetyku' : 'Dodawanie kosmetyku'}}</h2>
 <form [formGroup]="kosmetykForm" (ngSubmit)="save()">
   <div class="control-group">
     <label class="control-label">Category</label>
@@ -15,7 +15,7 @@
   </div>
   <div class="control-group">
     <label class="control-label">Cost</label>
-    <input type="text" formControlName="cost">
+    <input type="number" formControlName="cost">
   </div>
   <div class="control-group">
     <label class="control-label">Component</label>

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { KosmetykShowComponent } from './kosmetyki/kosmetyk-show/kosmetyk-show.component';
+import { KosmetykiListComponent} from './kosmetyki/kosmetyki-list/kosmetyki-list.component';
 import { AddKosmetykComponent } from './kosmetyki/add-kosmetyk/add-kosmetyk.component';
 
 
 const routes: Routes = [
-  {path: 'kosmetyk-show', component: KosmetykShowComponent},
+  {path: 'kosmetyki-list', component: KosmetykiListComponent},
   {path: 'add-kosmetyk', component: AddKosmetykComponent},
-  {path: '', redirectTo: '/kosmetyk-show', pathMatch: 'full'}
+  {path: '', redirectTo: '/kosmetyki-list', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Kosmetyk } from '../kosmetyk';
+import { KosmetykService } from '../kosmetyk.service';
 
 @Component({
   selector: 'app-kosmetyk-show',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KosmetykShowComponent implements OnInit {
 
-  constructor() { }
+  @Input() kosmetyk: Kosmetyk;
+  constructor(private kosmetykService: KosmetykService) { }
 
   ngOnInit() {
   }

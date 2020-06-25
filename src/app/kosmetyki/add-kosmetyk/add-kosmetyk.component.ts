@@ -36,9 +36,9 @@ export class AddKosmetykComponent implements OnInit {
   createNewFormGroup() {
     this.kosmetykForm = new FormGroup({
       id: new FormControl(),
-      categoty: new FormControl('', Validators.required),
+      category: new FormControl('', Validators.required),
       name: new FormControl('', Validators.required),
-      cost: new FormControl('', Validators.required),
+    cost: new FormControl('', [Validators.required, Validators.min(1)]),
       component: new FormControl('', Validators.required)
     });
   }
