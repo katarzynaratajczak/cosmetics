@@ -13,6 +13,55 @@
       "name": "Glacier",
       "cost": 50,
       "component": "Warzywo"
+    },
+    {
+      "id": 3,
+      "category": "Ciało",
+      "name": "Krem do stóp",
+      "cost": 10,
+      "component": "Minerał"
+    },
+    {
+      "id": 4,
+      "category": "Włosy",
+      "name": "Odżywka Eleo",
+      "cost": 20,
+      "component": "Kwiat"
+    },
+    {
+      "id": 5,
+      "category": "Pielęgnacja",
+      "name": "Balsam NovAge",
+      "cost": 60,
+      "component": "Owoc"
+    },
+    {
+      "id": 6,
+      "category": "Makijaż",
+      "name": "Tusz do rzęs",
+      "cost": 25,
+      "component": "Minerał"
+    },
+    {
+      "id": 7,
+      "category": "Zapachy",
+      "name": "Divine",
+      "cost": 50,
+      "component": "Kwiat"
+    },
+    {
+      "id": 8,
+      "category": "Włosy",
+      "name": "Szampon",
+      "cost": 20,
+      "component": "Owoc"
+    },
+    {
+      "id": 9,
+      "category": "Ciało",
+      "name": "Krem do rąk",
+      "cost": 10,
+      "component": "Warzywo"
     }
   ]
 }
